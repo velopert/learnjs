@@ -311,7 +311,6 @@ console.log(numbers);
 
 splice 를 사용 할 때 첫번째 파라미터는 어떤 인덱스부터 지울지를 의미하고 두번째 파라미터는 그 인덱스부터 몇개를 지울지를 의미합니다.
 
-
 ### slice
 
 slice 는 splice 랑 조금 비슷한데요, 배열을 잘라낼 때 사용하는데, 중요한 점은 기존의 배열은 건들이지 않는 다는 것입니다.
@@ -372,7 +371,7 @@ console.log(numbers);
 
 ```javascript
 const numbers = [10, 20, 30, 40];
-numbers.shift(5);
+numbers.unshift(5);
 console.log(numbers);
 ```
 
@@ -389,9 +388,9 @@ console.log(numbers);
 ```javascript
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
-const joined = arr1.concat(arr2);
+const concated = arr1.concat(arr2);
 
-console.log(joined);
+console.log(concated);
 ```
 
 결과는 다음과 같습니다.
@@ -402,6 +401,17 @@ console.log(joined);
 
 `concat` 함수는 arr1 과 arr2 에 변화를 주지 않습니다.
 
+### join
+
+`join` 은 배열 안의 값들을 문자열 형태로 합쳐줍니다.
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+console.log(array.join()); // 1,2,3,4,5
+console.log(array.join(' ')); // 1 2 3 4 5
+console.log(array.join(', ')); // 1, 2, 3, 4, 5
+```
+
 ### reduce
 
 `reduce` 함수는 잘 사용 할 줄 알면 정말 유용한 내장 함수입니다. 만약 여러분이 주어진 배열에 대하여 총합을 구해야 하는 상황이 왔다고 가정해봅시다.
@@ -409,10 +419,10 @@ console.log(joined);
 이렇게 구현을 할 수 있을텐데요
 
 ```javascript
-const array = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
 let sum = 0;
-array.forEach(n => {
+numbers.forEach(n => {
   sum += n;
 });
 console.log(sum);
@@ -425,7 +435,7 @@ console.log(sum);
 `reduce` 라는 함수를 사용하면 다음과 같이 구현 할 수 있습니다.
 
 ```javascript
-const array = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 let sum = array.reduce((accumulator, current) => accumulator + current, 0);
 
 console.log(sum);
@@ -501,5 +511,3 @@ console.log(count); // 5
 - [정답1](https://codesandbox.io/s/5w3971pkzp)
 - [정답2](https://codesandbox.io/s/zkzoqv298l)
 - [정답3](https://codesandbox.io/s/v3rl89wv8y)
-
-
