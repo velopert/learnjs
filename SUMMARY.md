@@ -14,7 +14,7 @@
   - [10. 프로토타입과 클래스](./basics/10-prototype-class.md)
 - [2장. 알고있으면 유용한 자바스크립트 문법](./useful/README.md)
   - [01. 삼항 연산자](./useful/01-ternary.md)
-  - [02. Truthy and Flasy](./useful/02-truthy-and-falsy.md)
+  - [02. Truthy and Falsy](./useful/02-truthy-and-falsy.md)
   - [03. 단축 평가 논리 계산법](./useful/03-short-circuiting.md)
   - [04. 함수의 기본 파라미터](./useful/04-default-function-params.md)
   - [05. 조건문 더 스마트하게 쓰기](./useful/05-smarter-conditions.md)
