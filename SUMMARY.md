@@ -18,3 +18,5 @@
   - [03. 단축 평가 논리 계산법](./useful/03-short-circuiting.md)
   - [04. 함수의 기본 파라미터](./useful/04-default-function-params.md)
   - [05. 조건문 더 스마트하게 쓰기](./useful/05-smarter-conditions.md)
+  - [06. 비구조화 할당 (구조 분해) 문법](./useful/06-destructuring.md)
+  - [07. spread 와 rest 문법](./useful/07-spread-and-rest.md)
