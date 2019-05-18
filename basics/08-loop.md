@@ -188,3 +188,5 @@ console.log(biggerThanThree(numbers)); // [4, 5, 6, 7]
 ![](https://i.imgur.com/FcS7aZO.png)
 
 [정답](https://codesandbox.io/s/lro75070q7?fontsize=14)
+
+

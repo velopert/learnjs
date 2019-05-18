@@ -81,3 +81,5 @@ console.log(objects.length);
 length 가 2에서 3으로 올라갔나요?
 
 배열이 push 와 length 말고도 다양한 기능을 가지고 있습니다. 이에 대해선 나중에 다시 알아보겠습니다.
+
+
