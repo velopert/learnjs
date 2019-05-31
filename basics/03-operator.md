@@ -61,7 +61,7 @@ console.log(++a);
 ![](https://i.imgur.com/mfzGBCy.png)
 
 `console.log(a++);` 를 할 때에는 1을 더하기 직전 값을 보여주고
-`console.log(+aa);` 를 할 때에는 1을 더한 다음의 값을 보여준다는 차이가 있습니다.
+`console.log(++a);` 를 할 때에는 1을 더한 다음의 값을 보여준다는 차이가 있습니다.
 
 덧셈 외에도 뺄셈도 똑같이 할 수 있습니다.
 
