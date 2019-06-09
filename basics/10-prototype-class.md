@@ -133,12 +133,16 @@ dog.say();
 cat.say();
 ```
 
+여기서 우리가 say 라는 함수를 클래스 내부에 선언하였는데요, 클래스 내부의 함수를 '메서드'라고 부릅니다. 이렇게 메서드를 만들면 자동으로 prototype 으로 등록이 됩니다.
+
 결과는 다음과 같습니다.
 
 ```
 멍멍
 야옹
 ```
+
+
 
 `class` 를 사용했을때에는, 다른 클래스를 쉽게 상속 할 수 있습니다.
 
@@ -182,8 +186,6 @@ cat.say();
 
 상속을 할 때는 `extends` 키워드를 사용하며, constructor에서 사용하는 `super()` 함수가 상속받은 클래스의 생성자를 가르킵니다.
 
-class 를 사용 했을 때에도 객체생성자를 사용 했을 때와 똑같이 prototype 을 사용 할 수 있습니다.
-
 ```javascript
 class Animal {
   constructor(type, name, sound) {
@@ -192,10 +194,6 @@ class Animal {
     this.sound = sound;
   }
 }
-
-Animal.prototype.say = function() {
-  console.log(this.sound);
-};
 
 class Dog extends Animal {
   constructor(name, sound) {
@@ -221,3 +219,35 @@ cat2.say();
 ```
 
 
+### 연습
+
+연습삼아 다음 클래스도 만들어보세요.
+
+```javascript
+class Food {
+  constructor(name) {
+    this.name = name;
+    this.brands = [];
+  }
+  addBrand(brand) {
+    this.brands.push(brand)
+  }
+  print() {
+    console.log(`${this.name}을/를 파는 음식점들:`)
+    console.log(this.brands.join(', '));
+  }
+}
+
+const pizza = new Food('피자');
+pizza.addBrand('피자헛');
+pizza.addBrand('도미노 피자');
+
+const chicken = new Food('치킨');
+chicken.addBrand('굽네치킨');
+chicken.addBrand('BBQ');
+
+pizza.print()
+chicken.print();
+```
+
+이런식으로, 클래스를 만들어서 사용하면 같은 형태를 지닌 객체들을 만들때 객체들이 지닌 값과 함수를 보기 좋은 형태로 쉽게 관리 할 수 있습니다.

@@ -63,3 +63,4 @@ const calculateCircleArea = (r = 1) => Math.PI * r * r;
 const area = calculateCircleArea();
 console.log(area); // 3.141592653589793
 ```
+
