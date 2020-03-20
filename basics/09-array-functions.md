@@ -313,7 +313,7 @@ splice 를 사용 할 때 첫번째 파라미터는 어떤 인덱스부터 지�
 
 ### slice
 
-slice 는 splice 랑 조금 비슷한데요, 배열을 잘라낼 때 사용하는데, 중요한 점은 기존의 배열은 건들이지 않는 다는 것입니다.
+slice 는 splice 랑 조금 비슷한데요, 배열을 잘라낼 때 사용하는데, 중요한 점은 기존의 배열은 건드리지 않는 다는 것입니다.
 
 ```javascript
 const numbers = [10, 20, 30, 40];
@@ -436,7 +436,7 @@ console.log(sum);
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
-let sum = array.reduce((accumulator, current) => accumulator + current, 0);
+let sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
 
 console.log(sum);
 ```
