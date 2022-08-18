@@ -134,7 +134,7 @@ console.log(!NaN);
 
 ```javascript
 const num = parseInt('15', 10); // 10진수 15를 숫자로 변환하겠다는 의미
-console.log(num); // 10
+console.log(num); // 15
 const notnum = parseInt('야호~', 10);
 console.log(notnum); // NaN
 ```
